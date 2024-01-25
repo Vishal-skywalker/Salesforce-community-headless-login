@@ -37,7 +37,6 @@ app.post(BASE_PATH + 'login',(req, res) => {
             // console.log('err :>> ', err.response.data);
             res.json(err.response.data);
         });
-    res.end();
 });
 
 function doCodeExchange(authorizeResponse, clientId, res) {
